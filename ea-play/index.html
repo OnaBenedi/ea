@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EA Play: membresía de videojuegos de EA; sitio oficial de EA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <!-- menu oscuro login - codigo reutilizado -->
+      <div class="nav-container">
+        <ul class="navbar-menu">
+          <li class="navbar-login">
+            <div class="navbar-login-button">
+              <button class="navbar-login-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    fill="#b0b0b0"
+                    d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="navbar-help">
+            <div class="navbar-help-button">
+              <button class="navbar-help-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path
+                    fill="#b0b0b0"
+                    d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="navbar-ea">
+            <div class="navbar-ea-button">
+              <button class="navbar-ea-btn" id="ea-logo">
+                <img
+                  src="assets/Navbar/navbar-ea-icon.png"
+                  alt=""
+                  width="40"
+                  height="40"
+                />
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- header - menu dropdown -->
+      <div class="header-menu">
+        <img
+          src="assets/svg/ea-play-logo-coral-hero-logo-small.svg"
+          alt="logo-ea-play"
+        />
+        <div class="header-options">
+          <div class="header-games">
+            <button class="header-games-boton" id="header-games-btn">Juegos <i class="fa-solid fa-chevron-down" id="chevron-games"></i></button>
+            <div class="header-games-hidden" id="header-games-menu">
+                <p class="header-list-divider">Plataformas</p>
+                <a href="#" class="header-games-links">Xbox</a>
+                <a href="#" class="header-games-links">PlayStation</a>
+                <a href="#" class="header-games-links">Steam</a>
+                <a href="#" class="header-games-links">Origin</a>
+                <a href="#" class="header-games-links">EA Play Pro</a>
+            </div>
+          </div>
+          <div class="benefits-container">
+            <a href="https://www.ea.com/es-es/ea-play/member-benefits" class="header-links"
+              >Ventajas de los miembros</a>
+          </div>
+          <div class="news-container"><a href="https://www.ea.com/es-es/ea-play/news" class="header-links">Noticias</a></div>
+          <div class="newsletter-container"><a href="https://www.ea.com/es-es/ea-play/newsletter" class="header-links">Boletín</a></div>
+          <div class="faq-container"><a href="https://www.ea.com/es-es/ea-play/faq" class="header-links">Preguntas frecuentes</a></div>
+        </div>
+        <div class="header-btn-div">
+          <button class="header-join-button">Únete ya</button>
+        </div>
+      </div>
+      <!-- abre un menú lateral a la derecha con opciones de suscripción, no tiene animación pero funcionalidad sí -->
+    <div class="header-banner">
+      
+      <div class="banner-container">
+        <img
+        class="banner-image"
+        src="assets/svg/ea-play-logo-coral-hero-logo-small.svg"
+        alt="ea-play-banner-logo"
+      />
+        <h1 class="h1-banner">No te limites a jugar. Saca más partido a tus juegos.</h1>
+        <p>
+          Hazte miembro ya para conseguir recompensas mensuales exclusivas, una
+          colección de los mejores títulos de EA, pruebas de nuevos juegos de EA y
+          más por solo 5,99€ al mes.* Puedes cancelar en cualquier momento.
+        </p>
+        <div class="join-now-container"><p class="join-now-button">Únete ahora</p></div>
+      </div>
+    </div>
+    <!-- RUBÉN -->
+    <div class="pruebas-juegos">
+      <h2 class="game-demo-title">Pruebas de juegos</h2>
+      <div class="pruebas-juegos-cards">
+        <div class="pruebas-juegos-card">
+          <img
+            src="assets/trials-cards/ea-play-trials-section-ufc-5-16x9.png.adapt.crop16x9.png"
+            alt="ufc-img"
+          />
+          <h6 class="h6-rewards">EA SPORTS™ UFC™ 5</h6>
+          <p class="p-rewards">
+            Descubre la nueva evolución de los juegos de combate
+          </p>
+        </div>
+        <div class="pruebas-juegos-card">
+          <img
+            src="assets/trials-cards/ea-play-trials-section-eas-fc-24-16x9.png.adapt.crop16x9.png"
+            alt="fc-img"
+          />
+          <h6 class="h6-rewards">EA SPORTS FC™ 24</h6>
+          <p class="p-rewards">Vive una nueva era de The World's Game.</p>
+        </div>
+      </div>
+    </div>
+    <!-- sección con animación lateral de cards -->
+    <div class="recompensas-miembros">
+      <div class="recompensas-titulo">
+        <h2>Últimas recompensas para miembros</h2>
+        <div class="rewards-btn-container">
+          <button></button>
+          <p>Ver todas las recompensas para miembros</p>
+        </div>
+      </div>
+      <div class="recompensas-cards-group">
+        <!-- los tres pueden estar en un div que se mueve depende del botón -->
+        <div
+          class="recompensas-animation rec-first-position"
+          id="recompensas-card-div"
+        >
+          <div class="recompensas-cards-1st-group">
+            <div class="recompensas-card" id="recompensascard1">
+              <img src="assets/rewards-cards/card1.jpg" alt="card1-img" />
+              <div>
+                <h2>F1® 23</h2>
+                <h3>Potenciador de 5000 EXP</h3>
+                <p>1 - 31 de mayo</p>
+              </div>
+            </div>
+            <div class="recompensas-card" id="recompensascard2">
+              <img src="assets/rewards-cards/card2.png" alt="card2-img" />
+              <div>
+                <h2>Madden NFL 24 Ultimate Team</h2>
+                <h3>Sobre de mayo de EA Play para MUT</h3>
+                <p>1-31 de mayo</p>
+              </div>
+            </div>
+            <div class="recompensas-card" id="recompensascard3">
+              <img src="assets/rewards-cards/card3.png" alt="card3-img" />
+              <div>
+                <h2>Apex Legends</h2>
+                <h3>Amuleto de arma Jeringa dorada</h3>
+                <p>30 de abril - 3 de junio</p>
+              </div>
+            </div>
+            <div class="recompensas-card" id="recompensascard4">
+              <img src="assets/rewards-cards/card4.png" alt="card4-img" />
+              <div>
+                <h2>Battlefield™ 2042</h2>
+                <h3>Protector marítimo</h3>
+                <p>30 de abril - 28 de mayo</p>
+              </div>
+            </div>
+            <div class="recompensas-card" id="recompensascard5">
+              <img src="assets/rewards-cards/card5.png" alt="card5-img" />
+              <div>
+                <h2>EA SPORTS FC™ 24</h2>
+                <h3>Tn Shark Nike What The FC para Clubes</h3>
+                <p>26 de abril - 6 de junio</p>
+              </div>
+            </div>
+          </div>
+          <div class="recompensas-cards-2nd-group">
+            <div class="recompensas-card" id="recompensascard6">
+              <img src="assets/rewards-cards/card6.png" alt="card6-img" />
+              <div>
+                <h2>EA SPORTS FC™ 24</h2>
+                <h3>Camiseta Nike What The FC y MONEDAS VOLTA</h3>
+                <p>26 de abril - 6 de junio</p>
+              </div>
+            </div>
+            <div class="recompensas-card" id="recompensascard7">
+              <img src="assets/rewards-cards/card7.png" alt="card7-img" />
+              <div>
+                <h2>EA SPORTS FC™ 24</h2>
+                <h3>Ficha del draft de Ultimate Team™ de abril</h3>
+                <p>15 de abril - 14 de mayo</p>
+              </div>
+            </div>
+            <div class="recompensas-card" id="recompensascard8">
+              <img src="assets/rewards-cards/card8.png" alt="card8-img" />
+              <div>
+                <h2>EA SPORTS WRC</h2>
+                <h3>Recompensas de EA Play de la temporada 4</h3>
+                <p>9 de abril - 3 de junio</p>
+              </div>
+            </div>
+            <div class="recompensas-card" id="recompensascard9">
+              <img src="assets/rewards-cards/card9.png" alt="card9-img" />
+              <div>
+                <h2>NHL 24</h2>
+                <h3>Monedas de WOC</h3>
+                <p>28 de marzo - 22 de mayo</p>
+              </div>
+            </div>
+            <div class="recompensas-card" id="recompensascard10">
+              <img src="assets/rewards-cards/card10.png" alt="card10-img" />
+              <div>
+                <h2>NHL 24</h2>
+                <h3>Modificador de XP del pase de batalla WOC</h3>
+                <p>28 de marzo - 22 de mayo</p>
+              </div>
+            </div>
+          </div>
+          <div class="recompensas-cards-3rd-group">
+            <div class="recompensas-card" id="recompensascard11">
+              <img src="assets/rewards-cards/card11.png" alt="card11-img" />
+              <div>
+                <h2>NHL 24</h2>
+                <h3>Conjunto Super Hero</h3>
+                <p>28 de marzo - 22 de mayo</p>
+              </div>
+            </div>
+            <div class="recompensas-card" id="recompensascard12">
+              <img src="assets/rewards-cards/card12.png" alt="card12-img" />
+              <div>
+                <h2>NFS™ Unbound</h2>
+                <h3>Mercury Cougar (1967)</h3>
+                <p>Disponible el 10 de octubre</p>
+              </div>
+            </div>
+            <div class="recompensas-card" id="recompensascard13">
+              <img src="assets/rewards-cards/card13.png" alt="card13-img" />
+              <div>
+                <h2>EA SPORTS FC™ 24</h2>
+                <h3>Sobre de bienvenida de EA Play</h3>
+                <p>22 de septiembre</p>
+              </div>
+            </div>
+            <div class="recompensas-card" id="recompensascard14">
+              <img src="assets/rewards-cards/card2.png" alt="card14-img" />
+              <div>
+                <h2>Madden NFL 24 Ultimate Team</h2>
+                <h3>Sobre de bienvenida de EA Play</h3>
+                <p>15 de agosto</p>
+              </div>
+            </div>
+            <div class="recompensas-card" id="recompensascard15">
+              <img src="assets/rewards-cards/card15.png" alt="card15-img" />
+              <div>
+                <h2>NFS Unbound</h2>
+                <h3>BMW M3 Legends Edition (2006)</h3>
+                <p>Disponible el 19 de noviembre</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="recompensas-btns">
+        <button id="slide-left" class="slide-disabled">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="slider-progress" id="slider-progress">
+          <div class="slider-progress-bar" id="slider-progress-bar"></div>
+        </div>
+        <button id="slide-right" class="slide-enabled">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <!-- falta la barrita que tendrá animación -->
+      </div>
+    </div>
+    <div class="novedades">
+      <div class="novedades-title">
+        <h2>Novedades en The Play List</h2>
+        <div class="novedades-btn-container">
+          <button></button>
+          <p>Explorar The Play List</p>
+        </div>
+        
+      </div>
+      <div class="novedades-card-position">
+        <div class="novedades-card">
+          <img
+            src="assets/new-onplay/star-wars-jedi-survivor-16x9-thumbnail.jpg.adapt.crop16x9.652w.jpg"
+            alt="novedades-img1"
+          />
+          <h2>Disponible el 25 de abril de 2024</h2>
+          <h3>STAR WARS Jedi: Survivor™</h3>
+        </div>
+        <div class="novedades-card">
+          <img
+            src="assets/new-onplay/ea-play-nhl-24-playlist-tile-16x9.png.adapt.crop16x9.652w.png"
+            alt="novedades-img2"
+          />
+          <h2>Disponible el 18 de abril de 2024</h2>
+          <h3>NHL 24</h3>
+        </div>
+      </div>
+    </div>
+    <!-- sección ¿qué es ea play? -->
+
+      <div class="ea-play-definition">
+        <h2>¿Qué es EA Play?</h2>
+        <div class="eaplay-def-cards-position">
+          <div class="eaplay-def-card">
+            <h3>Pruebas de juegos</h3>
+            <p>
+              Puedes probar determinados juegos juevos durante un máximo de 10
+              horas sin compromiso. Si decides comprarlo, tu progreso se
+              transferirá al juego completo.
+            </p>
+            <p>La duración y disponibilidad de la prueba dependen del título</p>
+            <div class="fst-btn-container">
+              <button class="fst-btn"></button>
+              <p class="p-fst-btn">Descubre las pruebas de juego</p>
+            </div>
+          </div>
+          <div class="eaplay-def-card">
+            <h3>Recompensas para miembros</h3>
+            <p>
+              Como miembro, puedes desbloquear recompensas y desafíos en el juego
+              que te permitirán mejorar la experiencia de juego y destacar entre
+              la multitud
+            </p>
+            <div class="scnd-btn-container">
+              <button class="scnd-btn"></button>
+              <p class="p-scnd-btn">Explorar recompensas</p>
+            </div>
+          </div>
+          <div class="eaplay-def-card">
+            <h3>The Play List</h3>
+            <p>
+              Siempre tendrás algo más a lo que jugar con acceso ilimitado a una
+              colección de las series y títulos favoritos de nuestros fans.
+            </p>
+            <div class="trd-btn-container">
+              <button class="trd-btn"></button>
+              <p class="p-trd-btn">Echa un vistazo a The Play List</p>
+            </div>
+          </div>
+          <div class="eaplay-def-card">
+            <h3>10% de descuento</h3>
+            <p>
+              Ahorra un 10% en compras de contenido digital de Electronic Arts,
+              incluidas descargas de juegos, pases de temporada, paquetes de
+              puntos y DLC.
+            </p>
+            <div class="frt-btn-container">
+              <button class="frt-btn"></button>
+              <p class="p-frt-btn">Detalles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- cards grandes con planes de suscripción -->
+    <div class="ea-play-subs-cards-position">
+      <div class="eaplay-subs-card">
+        <div class="margin"></div>
+        <img
+          src="assets/svg/ea-play-logo-coral-hero-logo-small.svg"
+          alt="ea-play-logo"
+          class="ea-play-logo-img"
+        />
+        <div class="sub-card-content">
+          <div class="subs-card-price">
+            <p><span>5,99 €</span>/mes</p>
+            <p>O paga un año completo y ahorra un 44%</p>
+            <p><span>39,99 €</span>/año</p>
+          </div>
+          <div class="subs-card-check-list">
+            <div class="subs-card-check-item" id="subs-card-check-item-first1">
+              <i class="fa-solid fa-square-check"></i>
+              <p>
+                Juega a una selección de títulos nuevos días <br />
+                antes de su lanzamiento durante un máximo <br />
+                de 10 horas.
+              </p>
+            </div>
+            <div class="subs-card-check-item" id="subs-card-check-item-middle1">
+              <i class="fa-solid fa-square-check"></i>
+              <p>
+                Desbloquea recompensas solo para <br />
+                miembros en el juego.
+              </p>
+            </div>
+            <div class="subs-card-check-item" id="subs-card-check-item-last1">
+              <i class="fa-solid fa-square-check"></i>
+              <p>
+                Consigue acceso ilimitado a una colección de <br />
+                nuestros juegos más populares.
+              </p>
+            </div>
+            <div class="joinEa-container">
+              <button class="joinEa-btn"></button>
+              <p class="p-joinEa">Unirse a EA Play</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="eaplay-subs-card">
+        <h6>Solo en EA app</h6>
+        <img
+          src="assets/icons/ea-play-pro.png"
+          alt="ea-playpro-logo"
+          id="ea-playpro-logo"
+        />
+        <div class="sub-card-content2">
+          <div class="subs-card-price2">
+            <p><span>16,99 €</span>/ mes</p>
+            <p>O paga un año completo y ahorra un 41%</p>
+            <p><span>119,99 €</span>/ año</p>
+          </div>
+          <div class="subs-card-check-list">
+            <div class="subs-card-check-item" id="subs-card-check-item-first1">
+              <i class="fa-solid fa-square-check"></i>
+              <p>
+                Juega a las ediciones prémium de una <br />
+                selección de títulos nuevos días antes de su <br />
+                lanzamiento.
+              </p>
+            </div>
+            <div class="subs-card-check-item" id="subs-card-check-item-middle2">
+              <i class="fa-solid fa-square-check"></i>
+              <p>
+                Desbloquea recompensas solo para <br />
+                miembros en el juego.
+              </p>
+            </div>
+            <div class="subs-card-check-item" id="subs-card-check-item-last2">
+              <i class="fa-solid fa-square-check"></i>
+              <p>
+                Consigue acceso ilimitado a una biblioteca <br />
+                de ediciones prémium de juegos de <br />
+                Electronic Arts y las sagas más populares.
+              </p>
+            </div>
+            <div class="joinEaPro-container">
+              <button class="joinEaPro-btn"></button>
+              <p class="p-joinEaPro">Unirse a EA Play Pro</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- formulario de suscripción -->
+    <div class="subscription-form">
+      <div class="subscription-form-left">
+        <h2>
+          No te pierdas las novedades de EA <br />
+          Play
+        </h2>
+        <p>
+          Recibe las últimas noticias y ofertas de Ea Play, además de
+          actualizaciones y promociones de Electronic Arts.
+        </p>
+      </div>
+      <div class="subscription-form-right">
+        <div class="form-container">
+          <div class="email-container">
+            <input type="email"  class="email-imput" placeholder=""/>
+          </div>
+          <p id="p-form-email" class="p-form-email-visible">Correo electrónico</p>
+          <div class="scnd-row-container">
+            <div class="date-container">
+              <p id="label">Fecha de nacimiento</p>
+              <input type="text" class="date-btn" id="date-imput"/>
+            </div>
+            <div class="countries">
+              <div class="countries-container">
+                <button class="countries-button" id="countries-btn">
+                </button>
+                <p id="p-countries">País</p>
+                <i class="fa-solid fa-chevron-down" id="chevron-countries"></i>
+              </div>
+                <div class="countries-hidden" id="countries-menu">
+                  <a href="#" class="country-link">Estados Unidos</a>
+                  <a href="#" class="country-link">Alemania</a>
+                  <a href="#" class="country-link">Arabia Saudí</a>
+                  <a href="#" class="country-link">Argentina</a>
+                  <a href="#" class="country-link">Australia</a>
+                  <a href="#" class="country-link">Brasil</a>
+                  <a href="#" class="country-link">Bélgica</a>
+                  <a href="#" class="country-link">Canadá</a>
+                  <a href="#" class="country-link">Chile</a>
+                  <a href="#" class="country-link">China</a>
+                  <a href="#" class="country-link">Colombia</a>
+                  <a href="#" class="country-link">Corea</a>
+                  <a href="#" class="country-link">Dinamarca</a>
+                  <a href="#" class="country-link">Emiratos Árabes Unidos</a>
+                  <a href="#" class="country-link">Eslovaquia</a>
+                  <a href="#" class="country-link">España</a>
+                  <a href="#" class="country-link">Finlandia</a>
+                  <a href="#" class="country-link">Francia</a>
+                  <a href="#" class="country-link">Grecia</a>
+                  <a href="#" class="country-link">Hong Kong</a>
+                  <a href="#" class="country-link">Hungría</a>
+                  <a href="#" class="country-link">India</a>
+                  <a href="#" class="country-link">Irlanda</a>
+                  <a href="#" class="country-link">Israel</a>
+                  <a href="#" class="country-link">Italia</a>
+                  <a href="#" class="country-link">Japón</a>
+                  <a href="#" class="country-link">México</a>
+                  <a href="#" class="country-link">Noruega</a>
+                  <a href="#" class="country-link">Nueva Zelanda</a>
+                  <a href="#" class="country-link">Países Bajos</a>
+                  <a href="#" class="country-link">Polonia</a>
+                  <a href="#" class="country-link">Portugal</a>
+                  <a href="#" class="country-link">Reino Unido</a>
+                  <a href="#" class="country-link">República Checa</a>
+                  <a href="#" class="country-link">Rumanía</a>
+                  <a href="#" class="country-link">Rusia</a>
+                  <a href="#" class="country-link">Singapur</a>
+                  <a href="#" class="country-link">Sudáfrica</a>
+                  <a href="#" class="country-link">Suecia</a>
+                  <a href="#" class="country-link">Suiza</a>
+                  <a href="#" class="country-link">Tailandia</a>
+                  <a href="#" class="country-link">Taiwán</a>
+                  <a href="#" class="country-link">Turquía</a>
+                  <a href="#" class="country-link">Ucrania</a>
+                  <a href="#" class="country-link">Argentina</a>
+                </div>
+          </div>
+        </div>
+        </div>
+        <div class="privacy-agreement">
+          <label class="form-checkbox">
+            <input type="checkbox" class="checkbox-per"/>
+            <span class="checkmark"></span>
+          </label>
+          <p>
+            Puedo retirar mi consentimiento en cualquier momento. Para ello,
+            <br />
+            debo cambiar mis
+            <a href="https://myaccount.ea.com/cp-ui/aboutme/index"
+              >preferencias de correo electrónico</a
+            >, ponerme en <br />
+            contacto con
+            <a href="https://privacyadmin.ea.com/">privacyadmin.ea.com</a> o
+            enviar una carta a Electronic <br />
+            Arts Inc., ATTN: Email Opt-Out, 209 Redwood Shores Pkwy, Redwood
+            <br />
+            City, CA, 94065 (EE. UU.).
+          </p>
+        </div>
+        <div class="signUp-container">
+          <button class="signUp-btn"></button>
+          <p id="p-signUp">Regístrate</p>
+        </div>
+      </div>
+    </div>
+    <!-- FAQs -->
+    <div id="faqs">
+      <div id="faqs-title">
+        <h2>Preguntas frecuentes de EA Play</h2>
+        <div id="seeAnswers-container">
+          <button id="seeAnswers-btn"></button>
+          <p id="p-seeAnswers">Ver todas las respuestas</p>
+        </div>
+      </div>
+      <div id="faqs-text">
+        <div>
+          <h3>¿Cuánto cuesta EA Play?</h3>
+          <p>
+            EA Play solo cuesta 5,99€ al mes o 39,99€ al año. EA Play Pro cuesta
+            16,99€ al mes o 119,99€ al año.
+          </p>
+        </div>
+        <div>
+          <h3>¿Cuánto tiempo puedes jugar a títulos de EA Play?</h3>
+          <p>
+            ¡Mientras seas miembro, podrás jugar a tu antojo a cualquier título
+            de The Play List!
+          </p>
+        </div>
+        <div>
+          <h3>¿Cómo pago EA Play?</h3>
+          <p>
+            Puedes utilizar una tarjeta de crédito o débito o una cuenta de
+            PayPal para pagar EA Play. El pago se renovará automáticamente cada
+            mes o año en función de tu membresía.
+          </p>
+        </div>
+      </div>
+      <div id="eaplay-conditions">
+        * SUJETO A CONDICIONES, LIMITACIONES Y EXCLUSIONES. CONSULTA LOS
+        <a href="https://www.ea.com/es-es/legal/ea-play-terms"
+          >TÉRMINOS DE EA PLAY</a
+        >
+        PARA OBTENER MÁS INFORMACIÓN.
+      </div>
+    </div>
+
+    <footer id="footer-id" class="footer-regular">
+      <div class="footer-greyspace">
+        <div class="footer-top">
+          <div class="footer-top-right-links">
+            <div class="footer-media-links">
+              <h3>EA Play</h3>
+              <div>
+                <a href="https://www.facebook.com/ea.es/"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://twitter.com/EA_Espana"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+                <a href="https://www.instagram.com/ea"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="footer-top-left-links">
+              <a href="https://www.ea.com/es-es/ea-play/member-benefits"
+                >Ventajas de los miembros</a
+              >
+              <a href="https://www.ea.com/es-es/ea-play/games">Juegos</a>
+              <a href="https://www.ea.com/es-es/ea-play/news">Novedades</a>
+              <a href="https://www.ea.com/es-es/ea-play/newsletter">Boletín</a>
+              <a href="https://www.ea.com/es-es/ea-play/faq"
+                >Preguntas Frecuentes</a
+              >
+              <a href="https://www.ea.com/es-es/ea-play?join-now=true"
+                >Unirse</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-nav">
+          <img src="assets/footer/october-ea-ring.png" alt="ea icon" id="ea-logo-footer" />
+          <div class="footer-bottom-nav-links">
+            <div>
+              <a href="https://www.ea.com/es-es/games/library"
+                >Biblioteca de juegos</a
+              >
+              <a href="https://www.ea.com/es-es/subscribe">Suscribirse</a>
+              <a href="https://www.ea.com/es-es/ea-app">EA app</a>
+            </div>
+            <div>
+              <a href="https://www.ea.com/es-es/about">Acerca de EA</a>
+              <a href="https://www.ea.com/es-es/able">Accesibilidad</a>
+              <a href="https://help.ea.com/es/">Ayuda</a>
+            </div>
+          </div>
+          <div class="footer-bottom-nav-btns">
+            <div class="footer-menu-btn-container">
+              <button id="region"></button>
+              <p>
+                Precios regionales Spain
+                <i class="fa-solid fa-chevron-down" id="chevron-region"></i>
+              </p>
+            </div>
+            <div class="region-hidden" id="region-menu">
+              <div>
+                <a href="#" id="footer-no-border">Austria</a>
+                <a href="#">Belgium</a>
+                <a href="#">Bulgaria</a>
+                <a href="#">Croatia</a>
+                <a href="#">Cyprus</a>
+                <a href="#">Czech Republic</a>
+                <a href="#">Denmark</a>
+                <a href="#">Estonia</a>
+                <a href="#">Finland</a>
+              </div>
+              <div>
+                <a href="#" id="footer-no-border">France</a>
+                <a href="#">Germany</a>
+                <a href="#">Greece</a>
+                <a href="#">Hungary</a>
+                <a href="#">Iceland</a>
+                <a href="#">Ireland</a>
+                <a href="#">Italy</a>
+                <a href="#">Latvia</a>
+                <a href="#">Liechtenstein</a>
+              </div>
+              <div>
+                <a href="#" id="footer-no-border">Lithuania</a>
+                <a href="#">Luxembourg</a>
+                <a href="#">Malta</a>
+                <a href="#">Netherlands</a>
+                <a href="#">Norway</a>
+                <a href="#">Poland</a>
+                <a href="#">Portugal</a>
+                <a href="#">Romania</a>
+                <a href="#">Slovakia</a>
+              </div>
+              <div class="footer-fourth-column">
+                <a href="#" id="footer-no-border">Slovenia</a>
+                <a href="#">Spain</a>
+                <a href="#">Sweden</a>
+                <a href="#">Switzerland</a>
+              </div>
+            </div>
+            <div class="footer-menu-btn-container">
+              <button id="language"></button>
+              <p>
+                <span
+                  >Idioma <br />
+                  <i class="fa-regular fa-flag"></i> España
+                </span>
+                <i class="fa-solid fa-chevron-down" id="chevron-language"></i>
+              </p>
+            </div>
+            <div class="language-hidden" id="language-menu">
+              <div>
+                <a href="#" id="footer-no-border"
+                  ><i class="fa-regular fa-flag"></i>United States</a
+                >
+                <a href="#"><i class="fa-regular fa-flag"></i>United Kingdom</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Australia</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>France</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Deustchland</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Italia</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>日本</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Polska</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Brasil</a>
+              </div>
+              <div>
+                <a href="#" id="footer-no-border"
+                  ><i class="fa-regular fa-flag"></i>Россия</a
+                >
+                <a href="#"><i class="fa-regular fa-flag"></i>España</a>
+                <a href="#"
+                  ><i class="fa-regular fa-flag"></i>Česká republika</a
+                >
+                <a href="#"><i class="fa-regular fa-flag"></i>Canada (En)</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Canada (Fr)</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Danmark</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Suomi</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>México</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Nederland</a>
+              </div>
+              <div class="footer-third-language">
+                <a href="#" id="footer-no-border"
+                  ><i class="fa-regular fa-flag"></i>Norge</a
+                >
+                <a href="#"><i class="fa-regular fa-flag"></i>Sverige</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>中国</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>대한민국</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>繁體中文</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Türkiye</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-info">
+          <div class="footer-bottom-copyright">
+            <div class="footer-bottom-privacy">
+              <a href="http://www.ea.com/es-es/legal"
+                >Privacidad y avisos legales</a
+              >
+              <a href="https://www.ea.com/es-es/legal/user-agreement"
+                >Acuerdo de usuario</a
+              >
+              <a href="https://www.ea.com/es-es/legal/privacy-and-cookie-policy"
+                >Política de privacidad y directiva de cookies (tus derechos de
+                privacidad)</a
+              >
+              <a href="https://www.ea.com/es-es/service-updates"
+                >Actualizaciones del servicio online</a
+              >
+              <a href="https://www.ea.com/es-es/security">Seguridad</a>
+              <a href="https://www.youtube.com/t/terms"
+                >Términos de servicio de YouTube</a
+              >
+              <a href="https://policies.google.com/privacy"
+                >Política de privacidad de Google</a
+              >
+              <a href="#">Sus preferencias de cookies</a>
+            </div>
+
+            <p>© 2024 Electronic Arts Inc.</p>
+          </div>
+          <img src="assets\footer\truste.svg" alt="truste" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5ee89813d7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

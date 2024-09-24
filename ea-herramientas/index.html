@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EA - Herramientas parentales y para jugar - Sitio oficial de Electronic Arts</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/db2755a6fd.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  
+<!-- NAVBAR -->
+    <nav>
+      <div class="nav-container">
+        <ul class="navbar-menu">
+            <li class="navbar-login">
+                <div class="navbar-login-button">
+                    <button class="navbar-login-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#b0b0b0" d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg></button>
+                </div>
+            </li>
+            <li class="navbar-help">
+                <div class="navbar-help-button">
+                    <button class="navbar-help-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#b0b0b0" d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg></button>
+                </div>
+            </li>
+            <li class="navbar-ea" id="ea-logo">
+                <div class="navbar-ea-button">
+                    <button class="navbar-ea-btn"><img src="assets/Navbar/navbar-ea-icon.png" alt="" width="40" height="40"></button>
+                </div>
+            </li>
+        </ul>
+      </div>
+  </nav>
+
+<!-- HEADER MENU -->
+
+  <div class="header-menu">
+    <div class="hamburguer-menu">
+        <button class="hamburguer-icon" id="hamburguer-button">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="menu-overlay" id="menu-overlay"></div>
+        </button>
+        <div class="hamburguer-dpd-hidden" id="hamburguer-menu">
+          <div class="hb-allgames">
+            <a href="#" class="header-link"><p>Todos los juegos</p></a>
+            <div class="close-icon">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <a href="../index.html" class="hamburguer-eaplay">
+            <div class="hb-ea-animation">
+              <img src="https://media.contentapi.ea.com/content/dam/gin/images/2021/04/ea-play-16x9.png.adapt.crop1x1.767w.png" alt="" class="hb-eaplay-bg">
+              <img src="https://media.contentapi.ea.com/content/dam/gin/images/2021/04/ea-play-mono-logo-svg.svg" alt="" class="hb-ea-logo">
+            </div>
+          </a>
+          <div class="hb-grid">
+            <a href="#" class="hamburguer-fifa">
+              <div class="hb-fifa-animation">
+                <img src="https://media.contentapi.ea.com/content/dam/gin/images/2022/07/eas-fifa22-gen5-ue-keyart-horz-f23logo.jpg.adapt.crop1x1.767w.jpg" alt="" class="hb-fifa-bg">
+                <img src="https://media.contentapi.ea.com/content/dam/gin/common/logos/fifa23-logo-white-stacked.svg" alt="" class="hb-fifa-logo">
+              </div>
+            </a>
+            <a href="#" class="hamburguer-f1">
+              <div class="hb-f1-animation">
+                <img src="https://media.contentapi.ea.com/content/dam/gin/images/2022/05/1-1-gamebox-f122-keyart-1.png.adapt.crop1x1.767w.png" alt="" class="hb-f1-bg">
+                <img src="https://media.contentapi.ea.com/content/dam/gin/common/logos/f122-gamebox-logo.png" alt="" class="hb-f1-logo">
+              </div>
+            </a>
+            <a href="#" class="hamburguer-madden">
+              <div class="hb-madden-animation">
+                <img src="https://media.contentapi.ea.com/content/dam/gin/images/2022/05/madden-23-keyart.jpg.adapt.crop1x1.767w.jpg" alt="" class="hb-madden-bg">
+                <img src="https://media.contentapi.ea.com/content/dam/gin/common/logos/m23-gamebox-logo.svg" alt="" class="hb-madden-logo">
+              </div>
+            </a>
+            <a href="#" class="hamburguer-apex">
+              <div class="hb-appex-animation">
+                <img src="https://media.contentapi.ea.com/content/dam/gin/images/2019/01/apex-legends-keyart.jpg.adapt.crop1x1.767p.jpg" alt="" class="hb-appex-bg">
+                <img src="https://media.contentapi.ea.com/content/dam/gin/common/logos/apex-legends-mono-logo.svg" alt="" class="hb-appex-logo">
+              </div>
+            </a>
+            <a href="#" class="hamburguer-battlefield">
+              <div class="hb-battle-animation">
+                <img src="https://media.contentapi.ea.com/content/dam/gin/images/2021/06/battlefield-2042-key-art.jpg.adapt.crop1x1.767w.jpg" alt="" class="hb-battle-bg">
+                <img src="https://media.contentapi.ea.com/content/dam/gin/common/logos/battlefield-2042-mono-logo-svg.svg" alt="" class="hb-battle-logo">
+              </div>
+            </a>
+            <a href="#" class="hamburguer-sims">
+              <div class="hb-sims-animation">
+                <img src="https://media.contentapi.ea.com/content/dam/gin/images/2017/01/the-sims-4-keyart.jpg.adapt.crop1x1.767p.jpg" alt="" class="hb-sims-bg">
+                <img src="https://media.contentapi.ea.com/content/dam/gin/common/logos/the-sims-4-mono-logo.png" alt="" class="hb-sims-logo">
+              </div>
+            </a>
+          </div>
+        </div>
+    </div>
+    <div class="header-title">
+      <a href="#">
+        <img
+          src="https://media.contentapi.ea.com/content/dam/eacom/common/ea-wordmark-network-nav-coral.svg"
+          alt=""
+        />
+      </a>
+    </div>
+    <div class="header-games">
+      <div class="header-btn-animation">
+        <button class="header-games-button" id="header-games-btn">
+          JUEGOS
+          <i class="fa-solid fa-chevron-down" id="chevron-games"></i>
+      </div>
+      </button>
+      <div class="header-games-hidden" id="header-games-menu">
+          <div class="header-explore-games">
+            <p class="header-list-divider">EXPLORAR JUEGOS</p>
+            <a href="#" class="header-link">Últimos juegos</a>
+            <a href="#" class="header-link">Próximamente</a>
+            <a href="#" class="header-link">Juegos gratuitos</a>
+            <a href="#" class="header-link">EA SPORTS</a>
+            <a href="#" class="header-link">EA Originals</a>
+            <a href="#" class="header-link">Biblioteca de juegos</a>
+            <a href="#" class="header-link">Ofertas de EA app</a>
+          </div>
+          <div class="header-platforms">
+            <p class="header-list-divider">PLATAFORMAS</p>
+            <a href="#" class="header-link">PC</a>
+            <a href="#" class="header-link">PlayStation</a>
+            <a href="#" class="header-link">Xbox</a>
+            <a href="#" class="header-link">Nintendo Switch</a>
+            <a href="#" class="header-link">Móviles</a>
+            <a href="#" class="header-link">Pogo</a>
+          </div>
+      </div>
+    </div>
+    <div class="header-experiences">
+      <button class="header-experiencies-button" id="header-experiences-btn">
+        EXPERIENCIAS
+        <i class="fa-solid fa-chevron-down" id="chevron-experiences"></i>
+      </button>
+        <div class="header-experiencies-hidden" id="header-experiences-menu">
+            <a href="#" class="header-link">EA app</a>
+            <a href="#" class="header-link">EA Play</a>
+            <a href="#" class="header-link">Juego competitivo</a>
+            <a href="#" class="header-link">Pruebas de juego</a>
+        </div>
+    </div>
+    <div class="header-about">
+      <button class="header-about-button" id="header-about-btn">
+        ACERCA DE
+        <i class="fa-solid fa-chevron-down" id="chevron-about"></i>
+      </button>
+        <div class="header-about-hidden" id="header-about-menu">
+            <a href="#" class="header-link">Compañía</a>
+            <a href="#" class="header-link">Trabajar en EA</a>
+            <a href="#" class="header-link">Noticias</a>
+            <a href="#" class="header-link">Tecnología</a>
+            <a href="#" class="header-link">Estudios de EA</a>
+            <a href="#" class="header-link">Ea Partners</a>
+        </div>
+    </div>
+    <div class="header-commitments">
+      <button class="header-commitments-button" id="header-commitments-btn">
+        COMPROMISOS
+        <i class="fa-solid fa-chevron-down" id="chevron-commitments"></i>
+      </button>
+        <div class="header-commitments-hidden" id="header-commitments-menu">
+            <a href="#" class="header-link">Nuestros compromisos</a>
+            <a href="#" class="header-link">Juego positivo</a>
+            <a href="#" class="header-link">Diversidad e inclusión</a>
+            <a href="#" class="header-link">Impacto social</a>
+            <a href="#" class="header-link">Empleados y cultura</a>
+            <a href="#" class="header-link">Medio ambiente</a>
+        </div>
+    </div>
+    <div class="header-resources">
+      <button class="header-resources-button" id="header-resources-btn">
+        RECURSOS
+        <i class="fa-solid fa-chevron-down" id="chevron-resources"></i>
+      </button>
+        <div class="header-resources-hidden" id="header-resources-menu">
+            <a href="#" class="header-link">Ayuda</a>
+            <a href="#" class="header-link">Foros</a>
+            <a href="#" class="header-link">Herramientas de juego y parentales</a>
+            <a href="#" class="header-link">Accesibilidad</a>
+            <a href="#" class="header-link">Prensa</a>
+            <a href="#" class="header-link">Inversores</a>
+        </div>
+    </div>
+</div>
+<!-- BANNER -->
+<div class="header-banner">
+  <div class="banner-bg-container">
+    <img src="https://media.contentapi.ea.com/content/dam/eacom/corporate/common/eacom-safe-online-header-section-bg-xl.jpg.adapt.1920w.jpg" alt="" class="banner-image">
+    <h3 class="p-banner">Herramientas parentales y de <br>
+      juego</h3>
+  </div>
+</div>
+
+<!-- BODY TOP -->
+
+<section class="experiences">
+  <div class="experiences-title">
+    <h3>Las experiencias de juego positivo y <br>
+      el control del juego van de la mano.</h3>
+    <h4>Hay distintas formas de gestionar tu experiencia y la de tu familia al jugar <br>
+      a juegos online.</h4>
+  </div>
+  <div class="experiences-icons">
+    <div class="tools-platform">
+      <img src="https://media.contentapi.ea.com/content/dam/eacom/corporate/common/eacom-staysafe-icons-acc-and-platform.jpg.adapt.crop16x9.652w.jpg" alt="" class="exp-icon">
+      <h3 class="p-icons">Herramientas de <br>
+        plataforma y <br>
+        cuenta</h3>
+    </div>
+    <div class="tools-game">
+      <img src="https://media.contentapi.ea.com/content/dam/eacom/corporate/common/eacom-staysafe-icons-game-tools.jpg.adapt.crop16x9.652w.jpg" alt="" class="exp-icon">
+      <h3 class="p-icons">Herramientas de <br>
+        juego</h3>
+    </div>
+    <div class="clasification">
+      <img src="https://media.contentapi.ea.com/content/dam/eacom/corporate/common/eacom-staysafe-icons-spendings-age-rate.jpg.adapt.crop16x9.652w.jpg" alt="" class="exp-icon">
+      <h3 class="p-icons">Clasificación de <br>
+        juegos</h3>
+    </div>
+    <div class="protect-online">
+      <img src="https://media.contentapi.ea.com/content/dam/eacom/corporate/common/eacom-staysafe-icons-online-safety.jpg.adapt.crop16x9.652w.jpg" alt="" class="exp-icon">
+      <h3 class="p-icons">Protégete en la red</h3>
+    </div>
+  </div>
+  <div class="learn-tools">
+    <div class="learn-tools-title">
+      <h3>
+        Comprender las herramientas de <br>
+        plataforma y cuenta</h3>
+      <p>Las principales plataformas de juego tienen controles de juego y familia o parentales que facilitan la <br>
+        gestión de las cuentas familiares. Al utilizar los servicios online de EA, puedes jugar, chatear y, en <br> 
+        algunos casos, compartir contenido con tus amistades y otras personas que jueguen. El primer paso <br>
+        para garantizar que tu familia y tú tenéis una experiencia positiva y segura al jugar es comprender las <br>
+        herramientas que tenéis disponibles en vuestras plataformas de juego.</p>
+        <div class="useful-links">
+          <h4>Enlaces útiles para gestionar el juego:</h4>
+          <ul>
+            <li><a href="">Obtén más información sobre las cuentas infantiles y de adolescentes y sus ajustes por defecto</a></li>
+            <li><a href="">Cómo puedes ayudar a proteger tu Cuenta EA y la de tu familia.</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+    <div class="choose-platforms">
+      <h4>Elige la guía de tu(s) plataforma(s) aquí:</h4>
+      <div class="platforms-fst-grid">
+        <div>
+          <img src="https://media.contentapi.ea.com/content/dam/eacom/corporate/common/ea-tile-parental-control-platform-ea-desktop.jpg.adapt.crop16x9.652w.jpg" alt="" class="platforms-img">
+          <h3 class="p-platforms">EA app</h3>
+        </div>
+        <div>
+          <img src="https://media.contentapi.ea.com/content/dam/eacom/corporate/common/ea-tile-parental-control-platform-apple.jpg.adapt.crop16x9.652w.jpg" alt="" class="platforms-img">
+          <h3 class="p-platforms">Apple</h3>
+        </div>
+        <div>
+          <img src="https://media.contentapi.ea.com/content/dam/eacom/corporate/common/ea-tile-parental-control-platform-epic-games.jpg.adapt.crop16x9.652w.jpg" alt="" class="platforms-img">
+          <h3 class="p-platforms">EPIC</h3>
+        </div>
+        <div>
+          <img src="https://media.contentapi.ea.com/content/dam/eacom/corporate/common/ea-tile-parental-control-platform-google-play.jpg.adapt.crop16x9.652w.jpg" alt="" class="platforms-img">
+          <h3 class="p-platforms">Google Play</h3>
+        </div>
+        <div>
+          <img src="https://media.contentapi.ea.com/content/dam/eacom/corporate/common/ea-tile-parental-control-platform-nintendo.jpg.adapt.crop16x9.652w.jpg" alt="" class="platforms-img">
+          <h3 class="p-platforms">Nintendo Switch</h3>
+        </div>
+        <div>
+          <img src="https://media.contentapi.ea.com/content/dam/eacom/corporate/common/ea-tile-parental-control-platform-playstation.jpg.adapt.crop16x9.652w.jpg" alt="" class="platforms-img">
+          <h3 class="p-platforms">PlayStation</h3>
+        </div>
+      </div>
+      <div class="platforms-snd-grid">
+        <div>
+          <img src="https://media.contentapi.ea.com/content/dam/eacom/corporate/common/ea-tile-parental-control-platform-steam.jpg.adapt.crop16x9.652w.jpg" alt="" class="platforms-img">
+          <h3 class="p-platforms">Steam</h3>
+        </div>
+        <div>
+          <img src="https://media.contentapi.ea.com/content/dam/eacom/corporate/common/ea-tile-parental-control-platform-xbox.jpg.adapt.crop16x9.652w.jpg" alt="" class="platforms-img">
+          <h3 class="p-platforms">Xbox</h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- BODY MIDDLE -->
+
+    <div class="controles-juego">
+      <div class="controles-juego-top">
+        <h3>
+          Comprender los controles en el juego disponibles en los títulos de EA
+        </h3>
+        <p>
+          En Electronic Arts, queremos que quienes juegan a nuestros títulos, al
+          igual que sus padres y madres, tengan toda la información que
+          necesitan para tomar decisiones relacionadas con los juegos. Tiempo de
+          juego de FIFA se ha diseñado para ayudar a quienes juegan a FIFA a
+          entender y controlar cómo juegan. Puedes usarlo para tener una visión
+          general de cuánto tiempo pasas jugando, los sobres de FUT que has
+          abierto y los FIFA Points que has comprado, además de establecer
+          límites para controlar cuánto juegas.
+        </p>
+      </div>
+      <div class="controles-juego-bottom">
+        <img
+          src="assets/ea-media-parental-control-playtime-control-fifa21.jpg.adapt.crop16x9.1455w.jpg"
+          alt="controles de juegos img"
+        />
+        <div>
+            <a href="https://www.ea.com/es-es/games/fifa/fifa-23"
+              >Más información sobre Tiempo de Juego de FIFA
+              </a><a href="https://www.ea.com/es-es/games/fifa/fifa-23">
+                  <img src="assets/svg/tilearrowdark.svg" alt="arrow-right"
+                  />
+              </a>
+        </div>
+      </div>
+    </div>
+    <div class="sist-clasificacion-videojuegos">
+      <div class="sist-clasificacion-videojuegos-top">
+        <h3>Sistemas de clasificación de videojuegos</h3>
+        <p class="pegi-top-txt">
+          Los padres y tutores quieren conocer los títulos a los que juegan sus
+          hijos y sentirse cómodos con ellos.
+        </p>
+        <p  class="pegi-top-txt">
+          Los videojuegos tienen sistemas de clasificación diseñados para ayudar
+          a los jugadores y a los padres o tutores a tomar decisiones ponderadas
+          sobre los juegos que eligen para sí mismos o para sus hijos. Todos los
+          títulos de EA están marcados con una clasificación que indica la
+          pertinencia de edad del contenido. Los sistemas de clasificación
+          también asignan descriptores que proporcionan información sobre
+          características, como compras en el juego. Las clasificaciones y los
+          descriptores de contenido varían según la región del mundo.
+        </p>
+      </div>
+      <div class="sist-clasificacion-videojuegos-bottom">
+        <img src="assets/ea-media-parental-control-ratings-system-europe-pegi.jpg.adapt.crop16x9.1455w.jpg" alt="pegi-img">
+        <div class="pegi-right-content">
+            <h4>PEGI</h4>
+            <p class="pegi-right-txt">El mecanismo de autorregulación Pan European Game Information (PEGI) se basa en cinco categorías de edad y ocho descriptores de contenido. Las categorías de edad indican si un producto de software interactivo es apropiado para infantes de determinada edad. </p>
+            <div><button></button>
+              <p id="button-txt">Más información sobre PEGI</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="clasificacion-videojuegos">
+        <h3>
+            Juegos de Electronic Arts y clasificaciones</h3>
+            <div class="clasificacion-videojuegos-grid">
+                <div class="clasificacion-videojuegos-card">
+                    <img src="assets/pegi-3.jpg.adapt.crop16x9.1455w.jpg" alt="pegi3">
+                    <h4>PEGI 3</h4>
+                    <p>El contenido de las aplicaciones con esta clasificación se considera adecuado para todos los grupos de edad. Se acepta una cierta violencia en un contexto cómico (normalmente formas de violencia tipo dibujos animados, como Bugs Bunny o Tom & Jerry). Un/a niño/a no debería poder asociar al personaje de la pantalla con personas de la vida real y debe quedar claro que es una fantasía. La aplicación no debe contener sonidos ni imágenes que puedan asustar a niños/as pequeños/as. No debería escucharse lenguaje soez.</p>
+                    <div class="div-underline"><a href="https://www.ea.com/es-es/games/base-games?/filter/ratingCategory=pegi-3">Explorar juegos</a></div>
+                </div>
+                <div class="clasificacion-videojuegos-card">
+                    <img src="assets/pegi-7.jpg.adapt.crop16x9.1455w.jpg" alt="pegi7">
+                    <h4>PEGI 7</h4>
+                    <p>Todas las aplicaciones que normalmente tendrían una clasificación de PEGI 3, pero que contienen algunas escenas o sonidos que pueden asustar a niños/as se engloban en esta categoría. Solo puede haber violencia muy leve en una aplicación de PEGI 7, como violencia implícita o no detallada y no realista.</p>
+                    <a href="https://www.ea.com/es-es/games/base-games?/filter/ratingCategory=pegi-7">Explorar juegos</a>
+                </div>
+                <div class="clasificacion-videojuegos-card">
+                    <img src="assets/pegi-12.jpg.adapt.crop16x9.1455w.jpg" alt="pegi12">
+                    <h4>PEGI 12</h4>
+                    <p>Los juegos o aplicaciones que muestran violencia de un carácter un poco más gráfico hacia personajes fantásticos o violencia no gráfica hacia animales o personajes de aspecto humano tendrán esta categoría de edad. También se incluye desnudez de una naturaleza un poco más gráfica y simulación de juegos de azar. Cualquier lenguaje soez de esta categoría tiene que ser suave y no debe contener improperios sexuales.</p>
+                    <a href="https://www.ea.com/es-es/games/base-games?/filter/ratingCategory=pegi-12">Explorar juegos</a>
+                </div>
+                <div class="clasificacion-videojuegos-card">
+                    <img src="assets/pegi-16.jpg.adapt.crop16x9.1455w.jpg" alt="pegi16">
+                    <h4>PEGI 16</h4>
+                    <p>Esta clasificación se aplicará cuando la representación de violencia o actividad sexual tenga el mismo aspecto que se esperaría en la vida real. Entre los contenidos de las aplicaciones con clasificación PEGI 16 se incluye un lenguaje inapropiado más fuerte, fomentar el consumo de tabaco o drogas y mostrar actividades delictivas.</p>
+                    <a href="https://www.ea.com/es-es/games/base-games?/filter/ratingCategory=pegi-16">Explorar juegos</a>
+                </div>
+                <div class="clasificacion-videojuegos-card">
+                    <img src="assets/pegi-18.jpg.adapt.crop16x9.1455w.jpg" alt="pegi18">
+                    <h4>PEGI 18</h4>
+                    <p>La clasificación para personas adultas se aplica cuando el nivel de violencia es flagrante o incluye elementos de tipos específicos de violencia (matanzas sin motivo, violencia contra personajes indefensos o violencia sexual). También puede incluir contenido sexual gráfico, discriminación o idealización del consumo de drogas ilegales.</p>
+                    <a href="https://www.ea.com/es-es/games/base-games?/filter/ratingCategory=pegi-18">Explorar juegos</a>
+                </div>
+            </div>
+    </div>
+
+    <!-- BODY BOTTOM -->
+    <div class="proteccion-red">
+      <h1 class="h1-title">Protégete en la red</h3>
+      <div class="proteccion-red-divs">
+        <img class="bottom-img" src="assets/bottom/img1.jpg" alt="1st img">
+        <div class="proteccion-right-text">
+          <h2>Actúa con discreción</h4>
+          <p class="p-size">Piensa bien con quién compartes tu información. Evita compartir información personal o privada online, incluso al crear tu ID de EA. No compartas nunca nada que pueda usarse para localizarte a ti o a otra persona en la vida real, como un nombre completo, una dirección de correo electrónico, una dirección postal o un número de teléfono. Las personas pueden actuar de forma diferente online y en la vida real. Si quieres conocer en la vida real a alguien con quien hayas estado hablando online, díselo siempre a una amistad, a tu padre, a tu madre o a tu tutor/a legal.</p>
+        </div>
+      </div>
+      <div class="proteccion-red-divs">
+        
+        <div class="proteccion-right-text">
+          <h4>Cuida tu seguridad</h4>
+          <p class="p-size">Asegúrate de que tu sistema está actualizado y protegido con software de seguridad (como escáneres de virus y malware). No abras, respondas ni reenvíes un correo electrónico o archivo adjunto salvo que conozcas a la persona que te lo ha enviado y cuando hayas comprobado que no tiene ningún virus. El contenido podría tener software dañino (como spyware o virus) o ser ofensivo.</p>
+        </div>
+        <img class="bottom-img" src="assets/bottom/img2.jpg" alt="2nd img">
+      </div>
+      <div class="proteccion-red-divs">
+        <img class="bottom-img" src="assets/bottom/img3.jpg" alt="3rd img">
+        <div class="proteccion-right-text">
+          <h4>Ten una actitud positiva</h4>
+          <p class="p-size">Trata a todo el mundo con respeto y no dudes de avisar si detectas un mal comportamiento. Descubre más sobre nuestro <a class="herramientas-link" href="https://www.ea.com/es-es/commitments/positive-play/charter">Acta de juego positivo</a> y <a class="herramientas-link" href="https://help.ea.com/es-es/help/faq/report-players-for-cheating-abuse-and-harassment">cómo denunciar a personas jugadoras</a>.</p>
+        </div>
+      </div>
+    </div>
+    <h1 class="h1-title-bottom">Tenemos un compromiso con el juego positivo</h1>
+    
+      
+      <div class="bottom-cards-div">
+        <div id="herramientas-card">
+          <img class="cards-image-top" src="https://media.contentapi.ea.com/content/dam/eacom/images/2022/07/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" alt="card-img">
+          <div class="cards-top-position">
+            <h3 class="h3-cards">Electronic Arts Inc.</h3>
+            <h6 class="h6-cards">13-sep-2022</h6>
+          </div>
+          <div class="cards-content-position">
+            <h2 class="h2-cards">Respeta las normas con el sistema EA anticheat para PC</h2>
+            <p class="content-size">EA anticheat para PC es una nueva tecnología que nos permite garantizar que el juego sea justo y protegerte de otras personas que intenten utilizar vulnerabilidades.</p>
+          </div>
+         </div>
+            <div id="herramientas-card">
+        <img class="cards-image-top" src="https://media.contentapi.ea.com/content/dam/eacom/images/2022/07/eacom-brand-featured-image-16x9.png.adapt.crop16x9.431p.png" alt="card-img">
+        <div class="cards-top-position">
+          <h3 class="h3-cards">EA por dentro</h3>
+          <h6 class="h6-cards">27-oct-2021</h6>
+        </div>
+        <div class="cards-content-position">
+          <h2 class="h2-cards">Reforzamos nuestro compromiso con la accesibilidad y la inclusión</h2>
+          <p class="content-size">Para inspirar al mundo a través de los juegos, debemos diseñar historias, personajes, experiencias y servicios que representen a todos los jugadores.</p>
+        </div>
+          </div>
+          <div id="herramientas-card">
+            <img class="cards-image-top" src="https://media.contentapi.ea.com/content/dam/eacom/images/2020/06/eappp-featured-image-logo-shapes.png.adapt.crop16x9.431p.png" alt="card-img">
+            <div class="cards-top-position">
+        <h3 class="h3-cards">EA por dentro</h3>
+        <h6 class="h6-cards">25-ago-2021</h6>
+            </div>
+            <div class="cards-content-position">
+        <h2 class="h2-cards">Cómo usar nuestras patentes para impulsar el juego positivo</h2>
+        <p class="content-size">Anunciamos un nuevo compromiso de patentes con el objetivo de compartir parte de nuestra tecnología más innovadora.</p>
+            </div>
+          </div>
+      </div>
+      
+  
+
+
+
+
+
+    <footer id="footer-id" class="footer-regular">
+      <div class="footer-greyspace">
+        <div class="footer-top">
+          <div class="footer-top-left-links">
+            <a href="https://www.ea.com/es-es/careers">Empleo</a>
+            <a href="https://www.ea.com/es-es/executives">Ejecutivos</a>
+            <a href="https://www.ea.com/es-es/news/2023-impact-report">Informe de impacto</a>
+            <a href="https://www.ea.com/es-es/commitments">Nuestros compromisos</a>
+            <a href="https://www.ea.com/es-es/about/reporting-concerns">Comunicar inquietudes</a>
+          </div>
+          <div class="footer-top-right-links">
+            <h3>Únete a la conversación</h3>
+            <div class="footer-media-links">
+              <a href="https://www.facebook.com/ea.es/"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com/EA_Espana"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://www.youtube.com/EA"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="https://www.instagram.com/ea"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.twitch.tv/ea" class="footer-twitch-icon"
+                ><i class="fa-brands fa-twitch"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-nav">
+          <img src="assets/footer/medallion-violet.png" alt="ea icon" id="ea-logo-footer"/>
+          <div class="footer-bottom-nav-links">
+            <div>
+              <a href="https://www.ea.com/es-es/games/library">Biblioteca de juegos</a>
+              <a href="https://www.ea.com/es-es/subscribe">Suscribirse</a>
+              <a href="https://www.ea.com/es-es/redeem">Canjear Código</a>
+            </div>
+            <div>
+              <a href="https://www.ea.com/es-es/ea-app">EA app</a>
+              <a href="https://www.ea.com/es-es/about">Acerca de</a>
+              <a href="https://www.ea.com/es-es/able">Accesibilidad</a>
+              <a href="https://help.ea.com/">Ayuda</a>
+            </div>
+          </div>
+          <div class="footer-bottom-nav-btns">
+            <div class="footer-menu-btn-container">
+              <button id="region">
+                
+              </button>
+              <p>Precios regionales Spain <i class="fa-solid fa-chevron-down" id="chevron-region"></i></p>
+            </div>
+            <div class="region-hidden" id="region-menu">
+              <div>
+                <a href="#" id="footer-no-border">Austria</a>
+                <a href="#">Belgium</a>
+                <a href="#">Bulgaria</a>
+                <a href="#">Croatia</a>
+                <a href="#">Cyprus</a>
+                <a href="#">Czech Republic</a>
+                <a href="#">Denmark</a>
+                <a href="#">Estonia</a>
+                <a href="#">Finland</a>
+              </div>
+              <div>
+                <a href="#" id="footer-no-border">France</a>
+                <a href="#">Germany</a>
+                <a href="#">Greece</a>
+                <a href="#">Hungary</a>
+                <a href="#">Iceland</a>
+                <a href="#">Ireland</a>
+                <a href="#">Italy</a>
+                <a href="#">Latvia</a>
+                <a href="#">Liechtenstein</a>
+              </div>
+              <div>
+                <a href="#" id="footer-no-border">Lithuania</a>
+                <a href="#">Luxembourg</a>
+                <a href="#">Malta</a>
+                <a href="#">Netherlands</a>
+                <a href="#">Norway</a>
+                <a href="#">Poland</a>
+                <a href="#">Portugal</a>
+                <a href="#">Romania</a>
+                <a href="#">Slovakia</a>
+              </div>
+              <div class="footer-fourth-column">
+                <a href="#" id="footer-no-border">Slovenia</a>
+                <a href="#">Spain</a>
+                <a href="#">Sweden</a>
+                <a href="#">Switzerland</a>
+              </div>
+            </div>
+            <div class="footer-menu-btn-container">
+              <button id="language" >
+              </button>
+              <p><span>Idioma <br>
+                <i class="fa-regular fa-flag"></i> España
+              </span> <i class="fa-solid fa-chevron-down" id="chevron-language"></i></p>
+            </div>
+            <div class="language-hidden" id="language-menu">
+              <div>
+                <a href="#" id="footer-no-border"
+                  ><i class="fa-regular fa-flag"></i>United States</a
+                >
+                <a href="#"><i class="fa-regular fa-flag"></i>United Kingdom</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Australia</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>France</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Deustchland</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Italia</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>日本</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Polska</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Brasil</a>
+              </div>
+              <div>
+                <a href="#" id="footer-no-border"
+                  ><i class="fa-regular fa-flag"></i>Россия</a
+                >
+                <a href="#"><i class="fa-regular fa-flag"></i>España</a>
+                <a href="#"
+                  ><i class="fa-regular fa-flag"></i>Česká republika</a
+                >
+                <a href="#"><i class="fa-regular fa-flag"></i>Canada (En)</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Canada (Fr)</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Danmark</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Suomi</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>México</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Nederland</a>
+              </div>
+              <div class="footer-third-language">
+                <a href="#" id="footer-no-border"
+                  ><i class="fa-regular fa-flag"></i>Norge</a
+                >
+                <a href="#"><i class="fa-regular fa-flag"></i>Sverige</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>中国</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>대한민국</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>繁體中文</a>
+                <a href="#"><i class="fa-regular fa-flag"></i>Türkiye</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-info">
+          <div class="footer-bottom-copyright">
+            <div class="footer-bottom-privacy">
+              <a href="#">Información legal y privacidad</a>
+              <a href="#">Acuerdo de usuario</a>
+              <a href="#"
+                >Política de privacidad y directiva de cookies (tus derechos de
+                privacidad)</a
+              >
+              <a href="#">Actualizaciones del servicio online</a>
+              <a href="#">Seguridad</a>
+              <a href="#">Sus preferencias</a>
+            </div>
+    
+            <p>© 2024 Electronic Arts Inc.</p>
+          </div>
+          <img src="assets/footer/truste.svg" alt="truste" />
+        </div>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
